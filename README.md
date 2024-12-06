@@ -12,7 +12,7 @@ Benefits include the "Standard Savings Account" plus "with Insurance".
 
 
 Develop a decorator pattern approach that will implement the given UML diagram:
-[UML goes here]
+![alt text](UML.png)
 
 The content of your Cimb.java should **ONLY** contain the following codes with the exception of inserting your own package name :
 ```java
@@ -22,7 +22,7 @@ public class Cimb {
 		
 		SavingsAccount account = new SavingsAccount();
 		
-		account.setAccountNumber(1234);
+		account.setAccountNumber("1234");
 		account.setAccountName("Juan Dela Cruz");
 		account.setBalance(10000.0);
 		
@@ -53,7 +53,30 @@ public class Cimb {
 }
 ```
 You should display the following output:
-[Output goes here]
+```Account number: 1234
+Account name: Juan Dela Cruz
+Balance: 10000.0
+Account type: Savings Account
+Interest rate: 0.01
+New balance: 10100.0
+Benefits: Standard Savings Account
+----------------------
+Account number: 1234
+Account name: Juan Dela Cruz
+Balance: 10000.0
+Account type: GSave
+Interest rate: 0.025
+New balance: 10250.0
+Benefits: Standard Savings Account, GCash Transfer
+----------------------
+Account number: 1234
+Account name: Juan Dela Cruz
+Balance: 10000.0
+Account type: UpSave
+Interest rate: 0.04
+New balance: 10400.0
+Benefits: Standard Savings Account, With Insurance
+```
 
 Description of the following methods
 
